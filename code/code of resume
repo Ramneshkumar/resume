@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Ramnesh Kumar} \\ \vspace{1pt}
+    Final Year B Tech ( Information Technology ) \\ \vspace{1pt}
+    \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ {+91-9044365504} ~} \href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ {ramneshkumar017@gmail.com}} ~ 
+    \href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ {Linkedin}}  ~
+    \href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ {Github}} ~
+    % \href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Galgotias College Of Engineering And Technology}{July 2020 -- Present}
+      {B tech - \textbf{SGPA} - \textbf{7.57 : 10}}{Greater Noida, India}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Standard Public}{June 2019}
+      {Intermediate - \textbf{Percentage} - \textbf{64.6\%}}{Raebareli, Uttar Pradesh}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Standard Public}{June 2017}
+      {Highschool - \textbf{Percentage} - \textbf{76.16\%}}{Raebareli, Uttar Pradesh}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Operating Systems
+                % \item Network Security
+                \item  DBMS
+                \item Artificial Intelligence
+                \item OOPS Concept
+                \item Web Development
+                % \item Android Development
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{{Personal Portfolio Website}}}} \large{}}{Github}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Desined a responsive personal portfolio showcasing skills, projects and Certificates}.}
+            \resumeItem{\normalsize{Utilized HTML, CSS, Bootstrap and JavaScript}.}
+
+            \resumeItem{\textcolor{accent} {\href{Live Project Link} {{\normalsize{Live site}}}}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{{Amazon Clone}}} } \large{\underline{}}}{{Github}}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Creating a website that replicates the features and functionality of Amazon\textbf{}.}}
+          \resumeItemListEnd
+          \vspace{-9pt}
+          
+          \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{{Food Ordering Website}}} }\large{\underline{}}}{Github}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Creating a food ordering website that allows users to browse and order food from various restaurants. \textbf{} }}
+            \resumeItem{\textcolor{accent} {\href{Project Link} {{\normalsize{Operations like Menu display, Add to cart, Order can be performed in this site.}}}}}
+            
+          \resumeItemListEnd
+          \vspace{-13pt}
+            
+          \resumeItemListEnd 
+\vspace{2pt}
+
+%
+
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP \& TRAINING}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Edunet Foundation }{June -- July 2023} 
+      {{Front End Development}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Assisted in the development of responsive web applications using HTML, CSS and JavaScript. \textbf{}}}
+  
+      \resumeItemListEnd 
+
+      \resumeSubheading
+      {Wipro }{ May -- September 2023} 
+      {{TalentNext Full Stack Javaprogram}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{ \textbf{}}}
+        
+  
+      \resumeItemListEnd  
+      
+      \resumeSubheading
+      {CodSoft Foundation}{August -- September 2023} 
+      {{Web Development}}{}
+      \resumeItemListStart
+        % \resumeItem{\normalsize{Assisted in the development of responsive web applications using HTML, CSS and JavaScript. \textbf{}}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{C++, C, Python, Java, JavaScript, SQL}} \\
+     
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{GitHub, ReactJS, NodeJS,Git}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+     \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item C++
+                \item Java
+                \item Html \& Css
+                \item JavaScript
+                \item Web Development LGM
+                \item  Python
+                \item Web Development Codsoft
+                
+                \item Html \& Css
+                \item JavaScript
+                
+                
+                % \item Android Development
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}\\
+%-----------INVOLVEMENT---------------
+\section{EXTRACURRICULAR ACTIVITY}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Unnat Bharat Abhiyan{} }{May 2023}{{}}
+                \resumeItem{\normalsize{Main aim of this program is to visit the different villages, Find villager’s problem and how to remove those problems as a Engineering Student . }}
+          
+    \resumeSubHeadingListEnd
+ \vspace{-12pt}
+ 
+ 
+
+
+\end{document}
